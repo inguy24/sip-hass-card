@@ -1,3 +1,6 @@
+NOTE: This is an unencrypted version that disables RTSP/DHLS and Web Socket Secure as I found I only need this for a doorbell and the hassle of dealing with self-signed certs with modern browsers is too much of a POS. Use this at your own risk. You will need to disable TLS and RTSP media encryption to make this work. 
+
+
 # sip-hass-card
 **A SIP client inside home assistant!**
 
