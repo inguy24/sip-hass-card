@@ -711,8 +711,8 @@ class SipJsCard extends LitElement {
 
         this.requestUpdate();
 
-        console.log("Connecting to wss://" + this.config.server + ":" + this.config.port + this.config.prefix + "/ws");
-        var socket = new WebSocketInterface("wss://" + this.config.server + ":" + this.config.port + this.config.prefix + "/ws");
+        console.log("Connecting to ws://" + this.config.server + ":" + this.config.port + this.config.prefix + "/ws");
+        var socket = new WebSocketInterface("ws://" + this.config.server + ":" + this.config.port + this.config.prefix + "/ws");
         var configuration = {
             sockets : [ socket ],
             uri     : "sip:" + this.user.extension + "@" + this.config.server,
